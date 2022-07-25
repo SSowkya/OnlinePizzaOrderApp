@@ -1,0 +1,122 @@
+<!-- <form>
+  Enter Pizza Name:<input type="text" name="pizza.pizzaName" [(ngModel)]="pizza.pizzaName"><br><br>
+  Enter Pizza Type:<input type="text" name="pizza.pizzaType" [(ngModel)]="pizza.pizzaType"><br><br>
+  Enter Pizza Description:<input type="text" name="pizza.pizzaDescription" [(ngModel)]="pizza.pizzaDescription"><br><br>
+  Enter Pizza Cost:<input type="number" name="pizza.pizzaCost" [(ngModel)]="pizza.pizzaCost"><br><br>
+  Enter Pizza Cost After Coupon:<input type="number" name="pizza.pizzaCostAfterCoupon" [(ngModel)]="pizza.pizzaCostAfterCoupon"><br><br>
+ 
+ 
+
+  <button type="submit" (click)="addPizza()">ADD Pizza</button> &nbsp;	&nbsp; 
+  <button type="submit" (click)="getPizzaList()">View Pizza</button> 
+
+
+</form> -->
+<!-- <table [hidden]="!Issubmitted" >
+  
+  <thead>
+    <th>Pizza Id</th>
+    <th>Pizza Name</th>
+    <th>Enter Pizza Description</th>
+    <th>Pizza Cost</th>
+    <th>Enter Pizza Cost After Coupon</th>
+    <th colspan="2"> Actions </th>
+  
+  </thead>
+  <tbody>
+    <tr *ngFor="let pizza of pizzas" >
+  <td>{{pizza.pizzaId}}</td>
+  <td>{{pizza.pizzaName}}</td>
+  <td>{{pizza.pizzaDescription}}</td>
+  <td>{{pizza.pizzaCost}}</td>
+  <td>{{pizza.pizzaCostAfterCoupon}}</td>
+  <td> <button (click)="deletePizza(pizza.pizzaId)">Delete</button></td>
+  <td> <button (click)="EditPizza(pizza.pizzaId)">Edit</button></td>
+   
+  </tr>
+  </tbody>
+  </table> -->
+
+
+<section class="h-100 bg-dark">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img
+                src="https://c1.wallpaperflare.com/preview/134/249/216/pizza-pizza-hut-cooking-kitchen.jpg"
+                alt="Online Pizza Order" class="img-fluid" />
+             
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h5>Pizza Add Form</h5><br>
+
+             
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <div style="color: red;" *ngIf="valid">Please fill all mandatory fields</div>
+                      Enter Pizza Name:<input type="text" class="form-control form-control-lg" name="pizza.pizzaName"
+                        [(ngModel)]="pizza.pizzaName">
+
+                    </div>
+                  </div>
+</div>
+<div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+
+                      Enter Pizza Type:<input type="text" class="form-control form-control-lg" name="pizza.pizzaType"
+                        [(ngModel)]="pizza.pizzaType">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+
+                      Enter Pizza Description:<input type="text" class="form-control form-control-lg"
+                        name="pizza.pizzaDescription" [(ngModel)]="pizza.pizzaDescription">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+
+                      Enter Pizza Cost:<input type="number" class="form-control form-control-lg" name="pizza.pizzaCost"
+                        [(ngModel)]="pizza.pizzaCost">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+
+                      Enter Pizza Cost After Coupon:<input type="number" class="form-control form-control-lg"
+                        name="pizza.pizzaCostAfterCoupon" [(ngModel)]="pizza.pizzaCostAfterCoupon"><br><br>
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div>
+                  <button type="button" class="btn btn-warning btn-lg" (click)="cancel()">Cancel</button> &nbsp; &nbsp;
+                  <button type="button" class="btn btn-success btn-lg " (click)="addPizza()">Add Pizza</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
